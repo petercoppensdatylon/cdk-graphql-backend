@@ -11,7 +11,7 @@ import { BuildEnvironmentVariableType } from '@aws-cdk/aws-codebuild';
  * Your AppSync application
  *
  * May consist of one or more Stacks
- * 
+ *
  */
 class AppSyncApplication extends Stage {
 
@@ -60,7 +60,7 @@ class PipelineStack extends Stack {
                 oauthToken: SecretValue.secretsManager('GITHUB_TOKEN'),
                 owner: githubOrg.valueAsString,
                 repo: 'cdk-graphql-backend',
-                branch: 'main'
+                branch: 'master'
             }),
 
             // This the where we synthesize the stacks and build our lambdas
