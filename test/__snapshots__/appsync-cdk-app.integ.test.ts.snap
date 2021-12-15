@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Note Create Note 1`] = `
+Object {
+  "data": Object {
+    "createNote": Object {
+      "completed": false,
+      "id": "001",
+      "name": "My note",
+    },
+  },
+}
+`;
+
+exports[`Delete Note Delete Note 1`] = `
+Object {
+  "data": Object {
+    "deleteNote": "001",
+  },
+}
+`;
+
+exports[`Get Note By Id Get Note 1`] = `
+Object {
+  "data": Object {
+    "getNoteById": Object {
+      "completed": false,
+      "id": "001",
+      "name": "My note",
+    },
+  },
+}
+`;
+
+exports[`List Empty Notes List Notes, should be empty 1`] = `
+Object {
+  "data": Object {
+    "listNotes": Array [],
+  },
+}
+`;
+
+exports[`List Notes List Notes, should not be empty 1`] = `
+Object {
+  "data": Object {
+    "listNotes": Array [
+      Object {
+        "completed": false,
+        "id": "001",
+        "name": "My note",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Update Note Update Note 1`] = `
+Object {
+  "data": Object {
+    "updateNote": Object {
+      "completed": true,
+      "id": "001",
+    },
+  },
+}
+`;
