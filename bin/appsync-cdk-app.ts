@@ -60,7 +60,7 @@ class PipelineStack extends Stack {
                 oauthToken: SecretValue.secretsManager('GITHUB_TOKEN'),
                 owner: githubOrg.valueAsString,
                 repo: 'cdk-graphql-backend',
-                branch: 'master'
+                branch: 'main'
             }),
 
             // This the where we synthesize the stacks and build our lambdas
