@@ -1,9 +1,9 @@
 /**
  * Tests AppSyncCdkApp
- * 
+ *
  * @group e2e
  */
-import Amplify, { API } from 'aws-amplify';
+import Amplify, { API } from '@aws-amplify/api';
 
 Amplify.configure({
   aws_appsync_region: process.env.AWS_DEFAULT_REGION, // Stack region

@@ -1,6 +1,6 @@
 /**
  * Tests AppSyncCdkApp
- * 
+ *
  * @group unit
  */
 import { SynthUtils } from '@aws-cdk/assert';
