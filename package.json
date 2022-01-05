@@ -5,14 +5,14 @@
     "appsync-cdk-app": "bin/appsync-cdk-app.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npm --version && node --version && tsc",
     "watch": "tsc -w",
     "test_": "jest",
     "test": "echo test",
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.82.0",
+    "@aws-cdk/assert": "1.138.0",
     "@mhlabs/cfn-diagram": "^1.1.6",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
@@ -25,12 +25,12 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-appsync": "^1.82.0",
-    "@aws-cdk/aws-dynamodb": "^1.82.0",
-    "@aws-cdk/aws-lambda": "^1.82.0",
-    "@aws-cdk/aws-secretsmanager": "^1.82.0",
-    "@aws-cdk/core": "1.82.0",
-    "@aws-cdk/pipelines": "^1.82.0",
+    "@aws-cdk/aws-appsync": "^1.138.0",
+    "@aws-cdk/aws-dynamodb": "^1.138.0",
+    "@aws-cdk/aws-lambda": "^1.138.0",
+    "@aws-cdk/aws-secretsmanager": "^1.138.0",
+    "@aws-cdk/core": "1.138.0",
+    "@aws-cdk/pipelines": "^1.138.0",
     "aws-sdk": "^2.818.0",
     "cdk": "^2.3.0",
     "source-map-support": "^0.5.16"
