@@ -24,7 +24,6 @@ class AppSyncApplication extends Stage {
         // create the application stack here
         const appSyncStack = new AppsyncCdkAppStack(this, 'AppsyncCdkAppStack');
 
-        /*
         // Stack Outputs
         this.apiKey = new CfnOutput(appSyncStack, 'ApiKeySecret', {
             value: appSyncStack.api.apiKey || ''
@@ -32,7 +31,6 @@ class AppSyncApplication extends Stage {
         this.apiURL = new CfnOutput(appSyncStack, 'GraphQLApiUrl', {
             value: appSyncStack.api.graphqlUrl
         });
-        */
     }
 }
 

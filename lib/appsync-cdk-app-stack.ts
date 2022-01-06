@@ -10,7 +10,6 @@ export class AppsyncCdkAppStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-/*
     this.api = new appsync.GraphqlApi(this, 'Api', {
       name: 'cdk-notes-appsync-api',
       schema: appsync.Schema.fromAsset('graphql/schema.graphql'),
@@ -60,7 +59,6 @@ export class AppsyncCdkAppStack extends cdk.Stack {
       typeName: "Mutation",
       fieldName: "updateNote"
     });
-*/
 
     // create DynamoDB table
     const notesTable = new ddb.Table(this, 'CDKNotesTable', {
@@ -72,9 +70,9 @@ export class AppsyncCdkAppStack extends cdk.Stack {
     });
 
     // enable the Lambda function to access the DynamoDB table (using IAM)
-    // notesTable.grantFullAccess(notesLambda)
+     notesTable.grantFullAccess(notesLambda)
 
-    // notesLambda.addEnvironment('NOTES_TABLE', notesTable.tableName);
+     notesLambda.addEnvironment('NOTES_TABLE', notesTable.tableName);
 
   }
 }
