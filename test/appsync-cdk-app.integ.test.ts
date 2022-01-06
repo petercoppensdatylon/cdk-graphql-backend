@@ -45,6 +45,7 @@ describe('Create Note', () => {
       query: mutation
     });
     expect(response).toMatchSnapshot();
+    console.log(`create note returned - ${JSON.stringify(response)}`);
   });
 });
 

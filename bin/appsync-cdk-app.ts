@@ -95,12 +95,10 @@ class PipelineStack extends Stack {
         const e2eTestAction = new ShellScriptAction({
             actionName: 'AlphaE2ETesting',
             additionalArtifacts: [sourceArtifact],
-            /*
             useOutputs: {
                 API_URL: pipeline.stackOutput(alpha.apiURL),
                 API_KEY: pipeline.stackOutput(alpha.apiKey)
             },
-            */
             commands: [
                 // Install dependencies
                 'npm ci',

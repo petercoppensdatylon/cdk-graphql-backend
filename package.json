@@ -7,8 +7,8 @@
   "scripts": {
     "build": "npm --version && node --version && tsc",
     "watch": "tsc -w",
-    "test_": "jest",
-    "test": "echo test",
+    "test": "jest",
+    "test_": "echo test",
     "cdk": "cdk"
   },
   "devDependencies": {
